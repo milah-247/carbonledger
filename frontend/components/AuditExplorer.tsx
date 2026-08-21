@@ -297,6 +297,7 @@ export default function AuditExplorer() {
           </p>
 
           <div
+            role="listbox"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -334,6 +335,8 @@ export default function AuditExplorer() {
 function AuditRecord({ record: r }: { record: RetirementRecord }) {
   return (
     <div
+      role="option"
+      aria-selected={false}
       style={{
         background: colors.surface,
         border: `1px solid ${colors.neutral[200]}`,
